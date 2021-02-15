@@ -1,3 +1,16 @@
-title {
-    color: red;
+body {
+    background-color: burlywood;
+}
+
+@media only screen and (min-width: 480px) {
+    body {
+        background-color: burlywood;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: cyan;
+    }
 }

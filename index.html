@@ -1,21 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-  <header class="header">
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <ul class="menu">
-      <li><a href="#work">History</a></li>
-      <li><a href="#about">Teams</a></li>
-      <li><a href="#careers">About</a></li>
-    </ul>
-  </header>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Australian Rules Football</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Australian Rules Football</h1>  
+	<header class="main-header">
+		<h1 class="name"><a href="#">Australian Rules Football</a></h1>
+		<ul class="main-nav">
+			<li><a href="#">History</a></li>
+			<li><a href="#">Teams</a></li>
+			<li><a href="#">International</a></li>
+		</ul>
+	</header>  
 
-   <img src="images/aussie_rules_field.jpg" alt="footy field" class="field-img"/>
+	<div class="banner">
+		<img class="logo" src="Images/footy_ball.jpeg" alt="Footy Ball">
+		<h1 class="headline">Australian Rules Football</h1>
+	</div>
+	
+	<div class="row">		
+		<div class="primary col">
+			<h2>Crowds</h2>
+			<img class="field-img" src="Images/grand_final.jpeg" alt="Field photo">
+			<p>The AFL attracts the highest amount of spectators of any sport in Australia and the fourth-highest attendance of any professional sport in the world with an average of 33,461 people per game. The game is so popular in the state of Victoria that the Friday before the Grand Final is celebrated with a public holiday.</p>
+      <p>There are currently 16 venues across every state in Australia capable of hosting AFL games, with the largest being the Melbourne Cricket Ground, which has a capacity of 100,024 and hosts the Grand Final each year.</p>
+		</div>
+		
+		<div class="secondary col">
+			<h2>History</h2>
+      <img class="history-img" src="Images/historical_photo.jpeg" alt="Historical team photo">
+			<p>Australian Rules football evolved in Melbourne in the mid-19th century. Both Gaelic football and an Aboriginal game (commonly referred to as ‘marngrook’) have been cited as inspiration, but the game really emerged from the football played in English public (that is, private) schools. Transported to the parklands of Melbourne, the game was shaped by the vast open spaces and the men who played it.</p>
+			<p>In May 1859, Thomas Wentworth Wills, a renowned cricketer and the greatest proponent of the new game, was one of seven members of the Melbourne Cricket Club who established a set of rules.</p>
+		</div>
+		
+		<div class="tertiary col">
+			<h2>Scoring</h2>
+      <img class="scoreboard-img" src="Images/aussie_rules_scoreboard.jpeg" alt="Scoreboard">
+			<p>Any player on the field can attempt to score by kicking the ball through the goal posts. There are four posts positioned at either end of the field; the taller posts are goal posts, which are flanked by two shorter posts called behind posts. A goal, equivalent to six points, is awarded when the ball is kicked through the two middle posts, while a single point, or behind, is awarded when the ball goes between an outside and middle post.</p>
+		</div>
+	</div>
+	<footer class="main-footer">
+		<h3> Score Generator </h3>
+		<form>
+		  <div class="args">
+			<label for="A"> Goals </label>
+			<input type="number" id="A" />
+			<label for="B">Behinds</label>
+			<input type="number" id="B" />
+		  </div>
+		  <div class="operations">
+			<input type="button" value="score" id="add"/>
+		 <div class="results">
+			<div id="output"> Result will appear here! </div>
+		  </div>	  
+	</footer>
+  <footer><span>&copy;2021 Jeremy Walker</span></footer>
+	</footer>
+	<script src="project.js"></script>
 </body>
 </html>

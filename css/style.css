@@ -1,0 +1,169 @@
+
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Ropa sans";
+	line-height: 1.6;
+	color: #0e0808;
+	margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: black;
+}
+p {
+	font-size: 18px;
+	margin-bottom: 4px;
+  color: rgb(14, 14, 15);
+}
+
+h2,
+a {
+	color: black;
+}
+h2 {
+	margin-top: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 24px;
+	margin: 0;
+}
+.main-nav {
+	margin-top: 5px;
+}
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+.main-nav a {
+	font-size: 15px;
+	color:black;
+	text-transform: uppercase;
+}
+.main-nav a:hover {
+	color: #095816;
+}
+
+/* ---- Containers ---- */
+
+.main-header {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.banner,
+.main-footer {
+	text-align: center;
+}
+.banner {
+	color: #fff;
+	background: #0a0157;
+	padding: 5px 0;
+	margin-bottom: 48px;
+}
+.col {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+input {
+	display: inline-block;
+	margin: 10px 20px 15px 5px;
+	width: 110px;
+  } 
+
+.operations > input {
+	width: 75px;
+	font-size: 16px;
+  }
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 25%;
+  border-radius: 90%;
+}
+.headline {
+	margin-bottom: 0;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.main-header,
+	.row {
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+}
+@media (min-width: 1025px) {
+	.main-header,
+	.row {
+		width: 80%;
+		max-width: 1150px;
+	}
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.main-header,
+	.main-nav,
+  .row {
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+.col {
+  flex: 1 50%;
+}
+
+.row {
+  flex-wrap: wrap;
+}
+
+.secondary {
+  order: -1;
+}
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+.col {
+  flex-basis: 0;
+}
+
+.primary {
+  flex-grow: 1.4;
+}
+}
+
